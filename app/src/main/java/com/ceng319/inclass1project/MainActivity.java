@@ -11,8 +11,12 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        //Replace loading screen
+        setTheme(R.style.AppTheme);
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         Button button = findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener(){
